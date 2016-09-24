@@ -42,7 +42,9 @@ query.json contains the body of an example query you can post to it:
  - bg
  - curl -v -H "Content-Type: application/json" -XPOST --data @query.json http://localhost:8000/graphql
 
-If you have [followed the instructions for setting up deployment using serverless](https://github.com/serverless/serverless/blob/master/docs/01-guide/01-installing-serverless.md) you can delpoy your lambda immediately, and test itL
+... you should see a response that matches the schema you can find in handler.js
+
+If you have [followed the instructions for setting up deployment using serverless](https://github.com/serverless/serverless/blob/master/docs/01-guide/01-installing-serverless.md) you can deploy your lambda immediately, and test itL
 
  - severless deploy
  - curl -v -H "Content-Type: application/json" -XPOST --data @query.json <URL that serverless tells you!>
