@@ -1,0 +1,5 @@
+[{
+   "query": "{projects{id,name}}"
+},{
+   "query": "query Anything{ project(id:1){name}}"	
+}]
