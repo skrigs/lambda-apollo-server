@@ -8,7 +8,7 @@ export function apolloLambda (options) {
 	}
 
 	if(arguments.length > 1){
-		throw '[500] Apollo Server expects exactly one argument, got ${arguments.length}'
+		throw `[500] Apollo Server expects exactly one argument, got ${arguments.length}`
 	}
 
 	return async(req) => {
@@ -17,7 +17,7 @@ export function apolloLambda (options) {
 			try{
 				optionsObject = await options(req)
 			}catch(e){
-				throw '[500] Invalid options provided to ApolloServer: ${e.message}'
+				throw `[500] Invalid options provided to ApolloServer: ${e.message}`
 			}
 		}
 
